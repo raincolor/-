@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>丽子美妆购物车</title>
+    <link rel="stylesheet" href="/lib/font/iconfont.css">
+    <link rel="stylesheet" href="/css/tools.css">
+    <link rel="stylesheet" href="/css/head.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/headSearch.css">
+    <script src="/lib/requirejs/require.min.js" data-main="/js/cart"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head-top"></div>
+        <div class="content">
+            <div class="cart-top">
+                <div class="top-box">
+                    <h1><a href="/"></a><span></span></h1>
+                    <h2>购物车</h2>
+                    <div class="page-step"></div>
+                </div>
+            </div>
+            <div class="cart-main">
+                <div class="page">
+                    <div class="none-box">
+                            <p>去首页逛逛<a href="/" class="btn">丽子首页</a></p>
+                            <div class="txt">OR，嗖～一下</div>
+                            <div class="search_box">
+                                <form action="/itemSearch/search" method="get" name="cart_search">
+                                    <input class="sea_input" type="text" name="content" placeholder="请输入商品名或品牌" value="">
+                                    <!--<input type="submit" class="icon-sousuo iconfont" value="\e819">-->
+                                    <button class="submit"><i class="iconfont icon-sousuo"></i></button>
+                                </form>
+                        </div>
+                    </div>
+                    <div class="page-cont hidden">
+                        <div class="page-nav">
+                            <ul>
+                                <li><a href="#">全部商品 (<span>1</span>)<em></em></a></li>
+                                <li><a href="#">优惠商品 (<span>1</span>)<em></em></a></li>
+                                <li><a href="#">库存紧张 (<span>0</span>)<em></em></a></li>
+                            </ul>
+                        </div>
+                        <div class="page-box">
+                            <div class="top">
+                                <ul>
+                                    <li class="td-chk chk_all"><label><input type="checkbox" class="chk_all">全选</label></li>
+                                    <li class="td-item">商品</li>
+                                    <li class="td-info">商品信息</li>
+                                    <li class="td-price">单价</li>
+                                    <li class="td-num">数量</li>
+                                    <li class="td-sum">小记</li>
+                                    <li class="td-op">操作</li>
+                                </ul>
+                            </div>
+                            <div class="center">
+                                <label><input type="checkbox" class="chk_all">丽子自营</label>
+                                <a href="#" class="shop-service"></a>
+                                <div class="cart-list">
+                                    <ul class="cart-body">
+                                        <li>
+                                            <span class="id" style="display: none;">31</span>
+                                            <label><input type="checkbox" class="chk_prod"></label>
+                                            <div class="list-item">
+                                                <div class="item-img">
+                                                    <a href="#"><img src="/img/d725b0995b3.jpg" alt=""></a>
+                                                </div>
+                                                <div class="item-info">
+                                                    <p>
+                                                        <a href="#">日本Dr.Ci:Labo城野医生LaboLabo毛孔收缩水100ml</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>规格：盒装</p>
+                                            </div>
+                                            <div class="list-price">
+                                                <p class="price-old">￥9.9</p>
+                                                <p class="price-now">￥32</p>
+                                            </div>
+                                            <div class="list-num">
+                                                <span class="num_op minus" title="减少1个数量">-</span>
+                                                <input class="num_val" type="text" data-storage="85" value="1">
+                                                <span class="num_op add" title="增加1个数量">+</span>
+                                            </div>
+                                            <div class="list-sum">
+                                                <p>￥32</p>
+                                            </div>
+                                            <div class="list-del">
+                                                <a href="javascript:void(0)">删除</a>
+                                            </div>
+                                        </li>
+                                         <li>
+                                            <label><input type="checkbox" class="chk_prod"></label>
+                                            <div class="list-item">
+                                                <div class="item-img">
+                                                    <a href="#"><img src="/img/d725b0995b3.jpg" alt=""></a>
+                                                </div>
+                                                <div class="item-info">
+                                                    <p>
+                                                        <a href="#">日本Dr.Ci:Labo城野医生LaboLabo毛孔收缩水100ml</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>规格：盒装</p>
+                                            </div>
+                                            <div class="list-price">
+                                                <p class="price-old">￥9.9</p>
+                                                <p class="price-now">￥32</p>
+                                            </div>
+                                            <div class="list-num">
+                                                <span class="num_op op minus" title="减少1个数量">-</span>
+                                                <input class="num_val op" type="text" data-storage="85" value="1">
+                                                <span class="num_op op add" title="增加1个数量">+</span>
+                                            </div>
+                                            <div class="list-sum">
+                                                <p>￥32</p>
+                                            </div>
+                                            <div class="list-del">
+                                                <a href="javascript:void(0)">删除</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="buttom">
+                                <div class="fl">
+                                    <ul>
+                                        <li class="td-chk"><label><input type="checkbox" class="chk_all">全选</label></li>
+                                        <li><a href="javascript:void(0)" class="del_all">删除</a></li>
+                                        <li><a href="javascript:void(0)">清空失效商品</a></li>
+                                    </ul>
+                                </div>
+                                <div class="fr">
+                                    <div class="total_count">
+                                        共有<em id="total_num">0</em>件商品，总计：<em id="total_price">￥0.00</em><em id="decrease"></em>
+                                        <a href="javascript:;" class="topay" id="topay">去结算</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <script type="text/html" id="cart-template">
+        {{each cart prod}}
+            <li class="td">
+                <div class="pro_id" style="display:none">{{prod.id}}</div>
+                <label><input type="checkbox" class="chk_prod"></label>
+                <div class="list-item">
+                    <div class="item-img">
+                        <a href="#"><img src="{{prod.img}}" alt=""></a>
+                    </div>
+                    <div class="item-info">
+                        <p>
+                            <a href="#">{{prod.title}}</a>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>规格：盒装</p>
+                </div>
+                <div class="list-price">
+                    <p class="price-old">{{prod.price}}</p>
+                    <p class="price-now">{{prod.price}}</p>
+                </div>
+                <div class="list-num">
+                    <span class="num_op op minus" ></span>
+                    <input class="num_val op" type="text" data-storage="85" value="{{prod.amount}}">
+                    <span class="num_op op add" ></span>
+                </div>
+                <div class="list-sum">
+                    <p>{{(prod.price*prod.amount).toFixed(2)}}</p>
+                </div>
+                <div class="list-del">
+                    <a href="javascript:void(0)">删除</a>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+</body>
+</html>

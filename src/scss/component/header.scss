@@ -1,0 +1,22 @@
+@mixin center{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+$bg: #ddd;
+.inner{
+	@include center;
+	height: 50px;
+	background: $bg;
+	.logo{
+		width:50px;
+		height:50px;
+		float: left;
+	}
+	nav{
+		float:right;
+		li{
+			float:left;
+		}
+	}
+}

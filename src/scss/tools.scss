@@ -1,0 +1,53 @@
+a{
+    text-decoration: none;
+    color: #34495e;;
+}
+ul li{
+    list-style:none;
+}
+body{
+    font-size: 12px;
+}
+address, cite, dfn, em, i, var {
+    font-style: normal;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0
+}
+input,a img,button{
+    border: 0;
+}
+input{
+    outline: 0;
+}
+
+.pro-id{
+    display: none;
+}

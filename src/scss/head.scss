@@ -1,0 +1,41 @@
+
+//head-top样式表
+
+.head-top{
+    width: 100%;
+    height: 26px;
+    a{
+        color: #9e9e9e;
+    }
+    .top_bar_bd{
+        height: 100%;
+        //width: 90%;
+        margin: 0 auto;
+        background: #f0f0f0;
+        .bar_fl{
+            float: left;
+        }
+        .bar_fr{
+            float: right;
+            margin: 0 35px;
+            line-height: 26px;
+            li{
+                float: left;
+                margin-left:15px; 
+            }
+            .more_menu{
+                position: relative;
+                &:hover{
+                    .more_bd{
+                        display: block;
+                    }
+                }                
+                .more_bd{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

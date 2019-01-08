@@ -1,0 +1,198 @@
+//头部下半部分
+//和导航菜单
+.head-bottom{
+    margin: 0 35px;
+    padding-top: 20px;
+    height: 100px;
+    h1{
+        float: left;
+        a{
+            text-indent: -9999px;            
+            display: inline-block;
+            width: 142px;
+            height: 54px;
+            background: url(/img/pc/logo-08.png) center;      
+        }
+    }
+    .head-b-center{
+        position: relative;
+        width: 515px;
+        margin: 0 auto;
+        .search{
+            input[type="text"]{
+                float: left;
+                border: 2px solid #ff666b;
+                width: 380px;
+                height: 36px;
+            }
+            button{
+                width: 130px;
+                height: 40px;
+                float: left;
+                background: #ff666b;
+                color: #fff;
+            }
+           
+        }
+         div{
+            background: #fff;
+            ul{
+                float: left;
+                li{
+                    float: left;
+                    margin: 10px 0;                        
+                    margin-right: 8px;
+                    
+                    &:nth-child(even){
+                        a{
+                            color: #ff666b;
+                        }
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        color: #ff666b;
+                    }
+                }
+   
+            }
+        }
+        .suggest{
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 380px;
+            z-index:9;
+            div{
+                height: 26px;
+                border-bottom:1px solid #ccc;
+                &:hover{
+                    cursor: pointer;
+                    background:#666;
+                }
+            }
+        }
+    }
+    .cart{
+        box-sizing: border-box;
+        width: 125px;
+        height: 35px;
+        border: 1px solid #999;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        button{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            color: #999;
+            i{
+                color: #999 !important;
+                margin: 0 2px;
+            }
+        }
+    }
+    position: relative;
+}
+
+//nav
+.nav{
+    width: 100%;
+    height: 42px;
+    background: #34495e;
+    .nav-wrap{
+        margin: 0 30px;
+    }
+    .nav-wrap>ul{
+        height: 100%;
+        float: left;
+        line-height: 42px;
+        color: #fff;
+        font-size:18px; 
+        // background: #ff666b;
+        .menu{
+            padding: 0 45px;
+        }
+        .menu:hover{
+            background: #1d3144;
+            cursor: pointer;
+        }
+        
+    }
+    .nav-list .menu{
+        display: block;
+        line-height: 40px;
+        background: #ff666b !important;
+    }
+    .nav-list {
+        position: relative;
+        &:hover{
+            .subnav{
+                display: block;
+            }
+        }
+        .subnav{
+            position: absolute;
+            background: #fff;
+            top:42px;
+            left: 0;
+            display: none;
+            width: 1180px;         
+            .subnav-left{
+                float: left;
+                width: 500px;
+                //border: 1px solid #ff0;
+                ul{
+                    width: 250px;
+                    li{
+                        padding-left: 20px;
+                        &:hover{
+                            background: #f0f0f0;
+                        }
+                    }
+                    a{
+                        font-size: 12px;
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                    h5{
+                        display: inline;
+                        color: #333;
+                        &:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .bg{
+                    li{
+                        height: 130px;                   
+                    }
+                }
+                
+                ul:nth-child(1){           
+                    float: left; 
+
+                }
+                 ul:nth-child(2){
+                    float: right;   
+                 } 
+            }
+            .subnav-right{
+                float: left;
+                width: 675px;
+                height: 260px;
+                ul{
+                    float: left;
+                    li{
+                        float: left;
+                        img{
+                            display: block;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
