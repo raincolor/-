@@ -75,12 +75,10 @@ gulp.task("lib", () => {
 
 //监听文件改变
 gulp.task("watch" ,() => {
-	gulp.watch("src/**/*.html", ["html"]);
+	gulp.watch("src/**/*.html", ["htm"]);
 	gulp.watch("src/js/**/*.js", ["js"]);
 	gulp.watch("src/scss/**/*.scss", ["css"]);
 })
-
-
 gulp.task("default", ["server", "htm","copy-css", "js", "img", "css", "lib", "watch"]);
 
 
